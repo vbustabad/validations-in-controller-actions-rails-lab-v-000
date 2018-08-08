@@ -6,8 +6,6 @@ class AuthorsController < ApplicationController
   def new
   end
 
-  Change AuthorsController#create to re-render the form if the new author is invalid.
-
   def create
     @author = Author.create!(author_params)
 
